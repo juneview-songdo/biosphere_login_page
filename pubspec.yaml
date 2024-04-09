@@ -1,7 +1,7 @@
 name: biosphere_login_page
 description: "Description here"
 #publish_to: 'none'
-#repository: https://github.com/melodysdreamj/juneflow
+repository: https://github.com/juneview-songdo/biosphere_login_page
 
 version: 1.0.0+1
 

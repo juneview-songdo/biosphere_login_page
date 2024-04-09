@@ -3,6 +3,7 @@ import 'dart:math';
 import 'package:dotted_border/dotted_border.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import '../../../../../../../../main.dart';
@@ -97,7 +98,7 @@ class NewViewState extends State<NewView> with StateMother {
                     children: [
                       GestureDetector(
                         onTap: () {
-                          Navigator.pop(context);
+                          print('back');
                         },
                         child: Container(
                           height: 50,
@@ -119,16 +120,21 @@ class NewViewState extends State<NewView> with StateMother {
                           color: Colors.black,
                         ),
                       ),
-                      Container(
-                        height: 50,
-                        width: 50,
-                        decoration: BoxDecoration(
-                          color: Colors.white,
-                          borderRadius: BorderRadius.circular(50),
-                        ),
-                        child: Icon(
-                          CupertinoIcons.person,
-                          size: 24,
+                      GestureDetector(
+                        onTap: () {
+                          print('profile');
+                        },
+                        child: Container(
+                          height: 50,
+                          width: 50,
+                          decoration: BoxDecoration(
+                            color: Colors.white,
+                            borderRadius: BorderRadius.circular(50),
+                          ),
+                          child: Icon(
+                            CupertinoIcons.person,
+                            size: 24,
+                          ),
                         ),
                       )
                     ],
